@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@ body{
     /* overflow: auto;*/
 }
 
-.container{
+.container {
     width: 380px;
     display: flex;
     flex-direction: column;
@@ -23,43 +23,71 @@ body{
     align-items: center;
     background-color: white;
     border-radius: 5px solid;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border: 2px solid;
+    background-image: url(./Images/basit.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 380px 515px;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    /* margin-top: 0; */
+    height: 100vh;
+    align-items: center;
+    background-color: whitesmoke;
+    /* overflow: auto; */
+}
+ 
 
-#mainHeading{
+#mainHeading {
     color: white;
-    background-color: blue;
+    background-color: #201f1f;
     width: 360px;
-    border-top-right-radius: 15px;
+    /* border-top-right-radius: 15px; */
     height: 6vh;
-    font-family: ui-sans-serif;
+    /* font-family: arial; */
     padding: 10px;
-    border-top-left-radius: 15px;
-    text-align: center;
+    /* border-top-left-radius: 15px; */
+    /* text-align: center; */
+    font-family: math;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 13px;
+    align-items: center;
+    /* font-weight: normal;*/
 }
 
-h1{
+h1 {}
 
-}
-
-#chatBox{
+#chatBox {
     overflow-y: auto;
     padding: 20px;
     flex: 1;
 }
 
-#chatList{
+#chatList {
     list-style: none;
     /* padding: 0; */
     /* margin: 0;*/
 }
 
-#typing{
+#typing {}
 
-}
-
-#typeMsg{
+#typeMsg {
     color: white;
     background-color: blue;
     font-size: larger;
@@ -69,17 +97,32 @@ h1{
     height: 6vh;
     padding: 10px;
 }
- 
-#typeMsgBox{
+
+#typeMsgBox {
     border-top: 1px solid #ddd;
     display: flex;
 }
 
-.leftSide{
+.leftSide {
+    width: 302px;
+    text-align: left;
+    color: white;
+
+    border-radius: 7px;
+    margin-top: 5px;
+
+    padding: 10px;
+
+    background-color: #373737;
+    /* height: 5vh; */
+    /* margin-left: 0px; */
+}
+
+.rightSide {
     width: 302px;
     text-align: right;
     color: white;
-    background-color: #0ec300;
+    background-color: #008d00;
     border-radius: 7px;
     margin-top: 5px;
     /* height: 5vh; */
@@ -87,14 +130,11 @@ h1{
     /* margin-left: 0px;*/
 }
 
-.rightSide{
-    width: 302px;
-    text-align: right;
-    color: white;
-    background-color: #0ec300;
-    border-radius: 7px;
-    margin-top: 5px;
-    /* height: 5vh; */
-    padding: 10px;
-    /* margin-left: 0px;*/
+img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* position: absolute; */
+    /* top: 89px;
+    left: 220px; */
 }
