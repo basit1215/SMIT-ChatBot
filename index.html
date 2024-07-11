@@ -4,28 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>     -->
     <link rel="stylesheet" href="style.css">
     <title>Chat Bot (●'◡'●)</title>
 </head>
 
 <body>
     <div class="container">
-        <div id="mainHeading">
-           <div> <h1>SMIT ChatBot</h1></div>
-           <div ><img src="./Images/smit.png" alt=""></div>
+        <div id="header">
+            <div>
+                <h1>SMIT ChatBot</h1>
+            </div>
+            <div>
+                <img src="./Images/smit.png" alt="">
+            </div>
         </div>
         <div id="chatBox">
             <ul id="chatList">
 
             </ul>
         </div><br>
-        <div id="typing" style="display: none;font-size: larger;color: #0d6db7;">
-            typing...
+
+        <div id="typing" style="display: none;font-size: larger;color: white;">
+           typing... 
         </div><br>
         <div id="typeMsgBox">
             <input id="typeMsg" type="text" placeholder="Type a message" onkeydown="checkUserPressKey(event)">
+
         </div>
     </div>
 
@@ -38,6 +43,3 @@
 </body>
 
 </html>
- 
-
- 

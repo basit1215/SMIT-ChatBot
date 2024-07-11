@@ -19,22 +19,25 @@ function msgSend() {
 
 msgList.innerHTML += "<li class='rightSide'>" + value + "</li>";
 
-typing.style.display = 'block';
+typing.style.display = 'inline';
+ 
+ 
+
 
 if (["assalam o alaikum", "salam", "assalamualaikum", "salaam"].indexOf(value.toLowerCase()) !== -1) {
     setTimeout(function () {
         msgList.innerHTML += "<li class='leftSide'> Walaikum assalam </li>";
     }, 2000);
     setTimeout(function () {
-        msgList.innerHTML += "<li class='leftSide'> Kese ho? </li>";
+        msgList.innerHTML += "<li class='leftSide'> How are you? </li>";
         typing.style.display = "none";
     }, 4000)
     msgType.value = "";
 
 }
-else if (["thik", "thikk hon", "theek", "mein theek", "allhamdullilah", "theek hon aap sunao"].indexOf(value.toLowerCase()) !== -1) {
+else if (["thik", "thikk hon", "theek", "mein theek", "allhamdullilah", "theek hon aap sunao", "i am fine", "fine", "fine and you"].indexOf(value.toLowerCase()) !== -1) {
     setTimeout(function () {
-        msgList.innerHTML += "<li class='leftSide'>  Mein aapki kia madad krskta hon? </li>";
+        msgList.innerHTML += "<li class='leftSide'>  What can I help you?</li>";
         typing.style.display = "none";
 
     }, 2000);
@@ -56,7 +59,7 @@ else if (["web and mobile app development", "graphic designing", "web and app", 
     }, 4000);
     msgType.value = "";
 }
-else if (["abdul basit", "muhammad ali", "ubaid", "danish", "akasha", "rehan", "abdul rafay", "muavia", "muaviya", "ebad", "hashir", "hani", "kashif", "zain", "abdul rehman", "shahzaib", "muhammad abrar", "abdul quddos", "faheem"].indexOf(value.toLowerCase()) !== -1) {
+else if (["abdul basit", "muhammad ali", "ubaid", "danish", "akasha", "rehan", "abdul rafay", "muavia", "muaviya", "ebad", "hashir", "hani", "kashif", "zain", "abdul rehman", "shahzaib", "muhammad abrar", "abdul quddos", "faheem", "mohsin", "abdullah", "Aarib", "Maaz", "Sameed", "Rehan"].indexOf(value.toLowerCase()) !== -1) {
     setTimeout(function () {
         msgList.innerHTML += "<li  class='leftSide'> Okay  </li>  "
     }, 2000);
@@ -66,7 +69,7 @@ else if (["abdul basit", "muhammad ali", "ubaid", "danish", "akasha", "rehan", "
     }, 4000);
     msgType.value = "";
 }
-else if ([""].indexOf(value.toLowerCase()) !== -1) {
+else if (["Anees", "Shahzad", "Khalid", "Irshad Ahmad", "Ahsan", "Abid", "Nafees", "Akbar", "naveed", "Naseem" , "Naeem", "Aslam", "Asif", "javed", "ilyas", "sohail", "Rafique", "Bashir", "Fakharuddin", "Din Muhammad", "Hakim Ali", "Shakeel", "Khalid"].indexOf(value.toLowerCase()) !== -1) {
     setTimeout(function () {
         msgList.innerHTML += "<li class='leftSide'> Okay  </li>  "
     }, 2000);
@@ -88,10 +91,10 @@ else if (["inter", "intermediate", "metric", "matriculation", "masters", "gradua
 }
 else if (["123", "124", "012", "246", "120"].indexOf(value.toLowerCase()) !== -1) {
     setTimeout(function () {
-        msgList.innerHTML += "<li class='leftSide'> Congratulations!!! <br> SMIT mein apka Admission hogaya hai  </li>  ";
+        msgList.innerHTML += "<li class='leftSide'> Congratulations!!! <br> Your admission has been done in SMIT  </li>  ";
     }, 2000);
     setTimeout(function () {
-        msgList.innerHTML += "<li class='leftSide'> Roll No: " + Math.random().toFixed(5) + "  </li>";
+        msgList.innerHTML += "<li class='leftSide'> Roll No: " + (Math.random().toFixed(5)).replace('.' , '') + "  </li>";
     }, 4000);
     setTimeout(function () {
         msgList.innerHTML += "<li class='leftSide'> Campus: Ghulshan-e-Iqbal  </li>"
@@ -114,7 +117,7 @@ else if (["thanks", "thank you", "jazakallah", "mehrbani", "shukriya"].indexOf(v
 }
 else {
     setTimeout(function () {
-        msgList.innerHTML += "<li class='leftSide'> Welcome!!!  </li>  ";
+        msgList.innerHTML += "<li class='leftSide'>Sorry, I could not understand what you said  </li>  ";
         typing.style.display = "none";
     }, 2000);
     msgType.value = "";
